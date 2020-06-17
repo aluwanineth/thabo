@@ -1,0 +1,23 @@
+<div class="card">
+  <div class="card-header">Report</div>
+  <div class="card-body">
+    <div class="container">
+      <table class="table table-striped">
+        <thead>
+            <tr>
+              <th>Full Name</th>
+              <th>ID Number</th>
+              <th>Telephone Number</th>
+            </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let person of persons">
+            <td>{{ person.fullName }}</td>
+            <td>{{ person.idNumber }}</td>
+            <td>{{ person.telephoneNumber }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
